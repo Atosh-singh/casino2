@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #0e1621;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #15232d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sign-in-btn,
+.register-btn,
+.wallet {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sign-in-btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.register-btn {
+  background-color: #007bff;
+  color: white;
+}
+.register-btn:hover {
+  background-color: #0056b3;
+}
+
+.wallet {
+  background: #7ed56f;
+  border: 1px solid white;
+  color: black;
+}
+
+/* Side Navbar */
+.side-navbar {
+  width: 80px;
+  background-color: #15232d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  gap: 25px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.side-navbar .icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Main Content Layout */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  flex: 1;
+  margin-left: 80px; /* Leave space for the sidebar */
+  padding: 120px 50px; /* Adjust padding to prevent overlap */
+}
+
+/* Content Left */
+.content-left {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content-left h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.sign-up-btn {
+  padding: 10px 20px; /* Adjust to match register button size */
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  width: fit-content; /* Same width behavior as register button */
+  transition: background-color 0.3s;
+}
+
+.sign-up-btn:hover {
+  background-color: #0056b3; /* Slightly darker blue on hover */
+}
+
+.social-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  font-size: 32px;
+  cursor: pointer;
+  color: #00ff85;
+}
+
+/* Cards Section */
+.cards-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card img {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  object-fit: cover;
+}
